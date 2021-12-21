@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0001A0E1277223FE008A5AA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001A0E0277223FE008A5AA5 /* AppDelegate.swift */; };
-		0001A0E3277223FE008A5AA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001A0E2277223FE008A5AA5 /* ViewController.swift */; };
 		0001A0E5277223FF008A5AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0001A0E4277223FF008A5AA5 /* Assets.xcassets */; };
 		0001A0E8277223FF008A5AA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0001A0E6277223FF008A5AA5 /* Main.storyboard */; };
 		0001A0F3277223FF008A5AA5 /* cvrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001A0F2277223FF008A5AA5 /* cvrTests.swift */; };
 		0001A0FD277223FF008A5AA5 /* cvrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001A0FC277223FF008A5AA5 /* cvrUITests.swift */; };
 		0001A0FF277223FF008A5AA5 /* cvrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001A0FE277223FF008A5AA5 /* cvrUITestsLaunchTests.swift */; };
+		0096FEE327722B11000441D5 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 0096FEE227722B11000441D5 /* LaunchAtLogin */; };
+		0096FEE727722B74000441D5 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 0096FEE627722B74000441D5 /* HotKey */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		0001A0DD277223FE008A5AA5 /* cvr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cvr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0001A0E0277223FE008A5AA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0001A0E2277223FE008A5AA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0001A0E4277223FF008A5AA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0001A0E7277223FF008A5AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0001A0E9277223FF008A5AA5 /* cvr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cvr.entitlements; sourceTree = "<group>"; };
@@ -45,6 +45,8 @@
 		0001A0F8277223FF008A5AA5 /* cvrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cvrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0001A0FC277223FF008A5AA5 /* cvrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cvrUITests.swift; sourceTree = "<group>"; };
 		0001A0FE277223FF008A5AA5 /* cvrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cvrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		007C9560277244EB00BFE913 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0096FEE827722BC8000441D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0096FEE727722B74000441D5 /* HotKey in Frameworks */,
+				0096FEE327722B11000441D5 /* LaunchAtLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +79,7 @@
 		0001A0D4277223FE008A5AA5 = {
 			isa = PBXGroup;
 			children = (
+				007C9560277244EB00BFE913 /* README.md */,
 				0001A0DF277223FE008A5AA5 /* cvr */,
 				0001A0F1277223FF008A5AA5 /* cvrTests */,
 				0001A0FB277223FF008A5AA5 /* cvrUITests */,
@@ -95,8 +100,8 @@
 		0001A0DF277223FE008A5AA5 /* cvr */ = {
 			isa = PBXGroup;
 			children = (
+				0096FEE827722BC8000441D5 /* Info.plist */,
 				0001A0E0277223FE008A5AA5 /* AppDelegate.swift */,
-				0001A0E2277223FE008A5AA5 /* ViewController.swift */,
 				0001A0E4277223FF008A5AA5 /* Assets.xcassets */,
 				0001A0E6277223FF008A5AA5 /* Main.storyboard */,
 				0001A0E9277223FF008A5AA5 /* cvr.entitlements */,
@@ -131,12 +136,17 @@
 				0001A0D9277223FE008A5AA5 /* Sources */,
 				0001A0DA277223FE008A5AA5 /* Frameworks */,
 				0001A0DB277223FE008A5AA5 /* Resources */,
+				003267992772305100E9250B /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = cvr;
+			packageProductDependencies = (
+				0096FEE227722B11000441D5 /* LaunchAtLogin */,
+				0096FEE627722B74000441D5 /* HotKey */,
+			);
 			productName = cvr;
 			productReference = 0001A0DD277223FE008A5AA5 /* cvr.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +219,10 @@
 				Base,
 			);
 			mainGroup = 0001A0D4277223FE008A5AA5;
+			packageReferences = (
+				0096FEE127722B11000441D5 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+				0096FEE527722B74000441D5 /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			productRefGroup = 0001A0DE277223FE008A5AA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -246,12 +260,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		003267992772305100E9250B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0001A0D9277223FE008A5AA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0001A0E3277223FE008A5AA5 /* ViewController.swift in Sources */,
 				0001A0E1277223FE008A5AA5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,12 +454,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = cvr/cvr.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86PQLB54ZQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cvr/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -435,7 +471,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xyfll7.cvr;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyfll7.cvr-only";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -448,12 +484,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = cvr/cvr.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86PQLB54ZQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cvr/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -462,7 +501,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xyfll7.cvr;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyfll7.cvr-only";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -581,6 +620,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0096FEE127722B11000441D5 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/xyfll7/LaunchAtLogin.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		0096FEE527722B74000441D5 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/xyfll7/HotKey.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0096FEE227722B11000441D5 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0096FEE127722B11000441D5 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+		0096FEE627722B74000441D5 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0096FEE527722B74000441D5 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0001A0D5277223FE008A5AA5 /* Project object */;
 }
