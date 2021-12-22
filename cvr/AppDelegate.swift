@@ -10,45 +10,47 @@ import HotKey
 import LaunchAtLogin
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     internal var hotKeys: [String: HotKey] = [
         "C+b" : HotKey(key: .b, modifiers: [.command]),
         "C+g" : HotKey(key: .g, modifiers: [.command])
     ]
     
-
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-
+        
         let itemImage = NSImage(named: "S")
         itemImage?.isTemplate = true
         statusItem.button?.image = itemImage
         initHotKeys()
         constructMenu()
-
+        
     }
-
+    
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
+    
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
     }
-
-
+    
+    
 }
 
 extension AppDelegate {
     func constructMenu() {
-      let menu = NSMenu()
+        let menu = NSMenu()
+        menu.addItem(NSMenuItem(title:"⌘+B一键百度", action: nil ,  keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title:"⌘+G一键谷歌", action: nil ,  keyEquivalent: ""))
+        menu.addItem(NSMenuItem.separator())
         let str = LaunchAtLogin.isEnabled ? "✔" : "✗"
-      menu.addItem(NSMenuItem(title:str + "  开机启动" , action: #selector(AppDelegate.startLogin(_:)), keyEquivalent: "s"))
-      menu.addItem(NSMenuItem.separator())
-      menu.addItem(NSMenuItem(title: "退出", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
-
-      statusItem.menu = menu
+        menu.addItem(NSMenuItem(title:str + "  开机启动" , action: #selector(AppDelegate.startLogin(_:)), keyEquivalent: "s"))
+        menu.addItem(NSMenuItem(title: "退出", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+        
+        statusItem.menu = menu
         
     }
     @objc func startLogin(_ sender: Any?) {
@@ -86,7 +88,7 @@ extension AppDelegate {
             perform(NSPasteboard.general.string(forType: NSPasteboard.PasteboardType.string) ?? "")
         }
     }
-
+    
 }
 
 
